@@ -48,3 +48,8 @@ Struct就是根据我们定义的生成策略，自动帮我们完成实体类�
 2. 枚举类型的字段会自动转为string类型,类型如A类值为枚举类```CarType.SEDAN```字段type
    会自动转为B类值为sedan字符串的type同名字段；
 3. 默认字段对应规则为同名字段对应不看类型，类型会自动转换。
+
+### 背后的技术
+1. 遵循jsr269 的注解处理器
+2. Service Provider Interface 服务发现技术
+3. freemarker
